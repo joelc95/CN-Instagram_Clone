@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+import { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Login } from './pages/login'
+import { Home } from './pages/home';
+import { Profile } from './pages/profile';
+import { tokenLogin } from './utils';
 import './App.css';
 
-function App() {
+
+const App = () => {
+  // This is destructuring the return value of the useState function
+  const [user, setUser] = useState();
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Login user={user} setUser={setUser}/>}/>
+        <Route path='/home' element={<Home user={user} setUser={setUser}/>}/>
+        <Route path='/user' element={<Profile user={user} setUser={setUser}/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

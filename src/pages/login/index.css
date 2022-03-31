@@ -1,0 +1,64 @@
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 10%;
+    width: 400px;
+    height: 400px;
+    /* background-color: rgb(214, 214, 214);
+    border: rgb(110, 110, 110) 1px solid; */
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(101, 99, 129, 0.322);
+    border-radius: 10px;
+    color: white
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+input {
+    border: none;
+    border-radius: 6px;
+    height: 20px;
+    padding: 0.5rem;
+    margin: 5px;
+    background-color: rgb(226, 226, 226)
+}
+
+input:focus {
+    outline: none;
+    background-color: rgb(243, 243, 243)
+}
+
+.login-bool {
+    cursor: pointer;
+    color: rgb(77, 77, 77);
+}
+
+.login-bool:hover {
+    color: rgb(126, 126, 126);
+}
+
+.submit-button {
+    margin: 5px;
+    background-color: rgb(159, 159, 192);
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.submit-button:hover {
+    background-color: rgb(139, 139, 168);
+    cursor: pointer;
+}
+

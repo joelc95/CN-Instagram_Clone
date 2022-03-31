@@ -1,0 +1,56 @@
+.feed {
+    background-color: rgb(235, 235, 235);
+}
+
+.photo-container {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-top: 20px;
+}
+
+.photo-header {
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-top: rgb(165, 165, 165) solid 1px;
+    border-left: rgb(165, 165, 165) solid 1px;
+    border-right: rgb(165, 165, 165) solid 1px;
+    
+}
+
+.photo-author {
+    margin-left: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.caption-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom: rgb(165, 165, 165) solid 1px;
+    border-left: rgb(165, 165, 165) solid 1px;
+    border-right: rgb(165, 165, 165) solid 1px;
+}
+
+.caption-author {
+    align-self:flex-start;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.caption-text {
+    align-self: flex-start;
+    margin-top: 0;
+    margin-left: 15px;
+    font-weight: 300;
+}
